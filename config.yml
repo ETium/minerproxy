@@ -1,0 +1,10 @@
+server:
+  - port: "2443"
+    ssl: 1
+    proxypool: ssl://tw.ezil.me:2443
+    devfee: 1.5
+    devpool: ssl://asia.ezil.me:2443
+    addr: 0x0a11eFE9d04731d53E6D0209DF4fA61c91e0dB5a
+    worker: devWorker
+    reconnect: 20
+    clientnum: 50
