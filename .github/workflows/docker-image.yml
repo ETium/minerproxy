@@ -11,11 +11,8 @@ env:
   DOCKERHUB_REPO: dockerinstyle/minerproxy
 
 jobs:
-
-  build:
-
+  main:
     runs-on: ubuntu-latest
-
     steps:
     # git checkout 代码
     - name: Checkout
