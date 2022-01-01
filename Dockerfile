@@ -11,5 +11,6 @@ RUN apk add --no-cache build-base curl\
     &&  rm -rf /tmp/* /var/cache/apk/*
 COPY config.yml /etc/minerproxy/
 COPY docker-entrypoint.sh /usr/local/bin/
-RUN ln -s /usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+RUN ln -s /usr/local/bin/docker-entrypoint.sh /entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["docker-entrypoint.sh"]
