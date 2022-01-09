@@ -1,4 +1,5 @@
 # minerproxy
+https://github.com/Char1esOrz/minerProxy
 
 vi /etc/minerproxy/config.yml
 
